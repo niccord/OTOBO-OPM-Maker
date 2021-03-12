@@ -4,11 +4,11 @@ use strict;
 use warnings;
 
 use Test::More;
-use OTRS::OPM::Maker;
-use OTRS::OPM::Maker::Command::filetest;
+use OTOBO::OPM::Maker;
+use OTOBO::OPM::Maker::Command::filetest;
 
-my $filetest = OTRS::OPM::Maker::Command::filetest->new({
-    app => OTRS::OPM::Maker->new,
+my $filetest = OTOBO::OPM::Maker::Command::filetest->new({
+    app => OTOBO::OPM::Maker->new,
 });
 
 {

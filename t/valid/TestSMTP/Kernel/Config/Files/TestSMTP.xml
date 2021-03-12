@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<otrs_config version="1.0" init="Application">
+<otobo_config version="1.0" init="Application">
     <CVS>$Id: TestSMTP.xml,v 1.1 2011/02/12 22:57:22 reb Exp $</CVS>
     <ConfigItem Name="TestSMTP::RealRecipients" Required="0" Valid="1">
         <Description Translatable="1">Those recipients are not replaced.</Description>
@@ -24,4 +24,4 @@
             </Array>
         </Setting>
     </ConfigItem>
-</otrs_config>
+</otobo_config>

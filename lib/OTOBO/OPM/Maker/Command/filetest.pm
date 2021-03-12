@@ -1,4 +1,4 @@
-package OTRS::OPM::Maker::Command::filetest;
+package OTOBO::OPM::Maker::Command::filetest;
 
 # ABSTRACT: check if filelist in .sopm includes the files on your disk
 
@@ -9,9 +9,9 @@ use File::Find::Rule;
 use Path::Class ();
 use XML::LibXML;
 
-use OTRS::OPM::Maker -command;
+use OTOBO::OPM::Maker -command;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub abstract {
     return "Check if filelist in .sopm includes the files on your disk";

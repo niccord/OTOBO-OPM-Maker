@@ -1,4 +1,4 @@
-package OTRS::OPM::Maker::Command::index;
+package OTOBO::OPM::Maker::Command::index;
 
 use strict;
 use warnings;
@@ -13,9 +13,9 @@ use Path::Class ();
 use XML::LibXML;
 use XML::LibXML::PrettyPrint;
 
-use OTRS::OPM::Maker -command;
+use OTOBO::OPM::Maker -command;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub abstract {
     return "build index for an OPM repository";
@@ -112,9 +112,9 @@ sub execute {
     }
     
     print sprintf qq~<?xml version="1.0" encoding="utf-8" ?>
-<otrs_package_list version="1.0">
+<otobo_package_list version="1.0">
 %s
-</otrs_package_list>
+</otobo_package_list>
 ~, join "", @packages;
 }
 

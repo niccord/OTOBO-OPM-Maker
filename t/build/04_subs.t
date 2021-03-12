@@ -4,16 +4,16 @@ use strict;
 use warnings;
 
 use Test::More;
-use OTRS::OPM::Maker;
-use OTRS::OPM::Maker::Command::build;
+use OTOBO::OPM::Maker;
+use OTOBO::OPM::Maker::Command::build;
 
-my $build = OTRS::OPM::Maker::Command::build->new({
-    app => OTRS::OPM::Maker->new,
+my $build = OTOBO::OPM::Maker::Command::build->new({
+    app => OTOBO::OPM::Maker->new,
 });
 
 {
     my $return = $build->abstract;
-    is $return, 'build package files for OTRS';
+    is $return, 'build package files for OTOBO';
 }
 
 {

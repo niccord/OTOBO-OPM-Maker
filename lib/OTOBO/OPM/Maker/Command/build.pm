@@ -1,21 +1,21 @@
-package OTRS::OPM::Maker::Command::build;
+package OTOBO::OPM::Maker::Command::build;
 
 use strict;
 use warnings;
 
-# ABSTRACT: Build OTRS packages
+# ABSTRACT: Build OTOBO packages
 
 use MIME::Base64 ();
 use Sys::Hostname;
 use Path::Class ();
 use XML::LibXML;
 
-use OTRS::OPM::Maker -command;
+use OTOBO::OPM::Maker -command;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub abstract {
-    return "build package files for OTRS";
+    return "build package files for OTOBO";
 }
 
 sub usage_desc {

@@ -1,4 +1,4 @@
-package OTRS::OPM::Maker::Command::sopmtest;
+package OTOBO::OPM::Maker::Command::sopmtest;
 
 # ABSTRACT: Check if sopm is valid
 
@@ -8,9 +8,9 @@ use warnings;
 use Path::Class ();
 use XML::LibXML;
 
-use OTRS::OPM::Maker -command;
+use OTOBO::OPM::Maker -command;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub abstract {
     return "check .sopm if it is valid";
@@ -65,7 +65,7 @@ __DATA__
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
     
-    <xs:element name="otrs_package">
+    <xs:element name=otobo_package">
         <xs:complexType>
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="CVS" minOccurs="0" />

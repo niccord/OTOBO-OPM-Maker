@@ -4,16 +4,16 @@ use strict;
 use warnings;
 
 use Test::More;
-use OTRS::OPM::Maker;
-use OTRS::OPM::Maker::Command::dependencies;
+use OTOBO::OPM::Maker;
+use OTOBO::OPM::Maker::Command::dependencies;
 
-my $dependencies = OTRS::OPM::Maker::Command::dependencies->new({
-    app => OTRS::OPM::Maker->new,
+my $dependencies = OTOBO::OPM::Maker::Command::dependencies->new({
+    app => OTOBO::OPM::Maker->new,
 });
 
 {
     my $return = $dependencies->abstract;
-    is $return, 'list dependencies for OTRS packages';
+    is $return, 'list dependencies for OTOBO packages';
 }
 
 {

@@ -4,11 +4,11 @@ use strict;
 use warnings;
 
 use Test::More;
-use OTRS::OPM::Maker;
-use OTRS::OPM::Maker::Command::sopmtest;
+use OTOBO::OPM::Maker;
+use OTOBO::OPM::Maker::Command::sopmtest;
 
-my $sopmtest = OTRS::OPM::Maker::Command::sopmtest->new({
-    app => OTRS::OPM::Maker->new,
+my $sopmtest = OTOBO::OPM::Maker::Command::sopmtest->new({
+    app => OTOBO::OPM::Maker->new,
 });
 
 {

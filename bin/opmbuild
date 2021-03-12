@@ -1,13 +1,13 @@
 #!/usr/bin/perl
 
-# ABSTRACT: script to build/test OTRS packages
+# ABSTRACT: script to build/test OTOBO packages
 
 use strict;
 use warnings;
 
 #use Getopt::Long;
 
-use OTRS::OPM::Maker;
-OTRS::OPM::Maker->run;
+use OTOBO::OPM::Maker;
+OTOBO::OPM::Maker->run;
 
 package opmbuild;

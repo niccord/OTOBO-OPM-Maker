@@ -1,18 +1,18 @@
-package OTRS::OPM::Maker::Command::dependencies;
+package OTOBO::OPM::Maker::Command::dependencies;
 
-# ABSTRACT: List dependencies of OTRS packages
+# ABSTRACT: List dependencies of OTOBO packages
 
 use strict;
 use warnings;
 
 use XML::LibXML;
 
-use OTRS::OPM::Maker -command;
+use OTOBO::OPM::Maker -command;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub abstract {
-    return "list dependencies for OTRS packages";
+    return "list dependencies for OTOBO packages";
 }
 
 sub usage_desc {
@@ -44,7 +44,7 @@ sub execute {
     my @modules_req = $root_elem->findnodes( 'ModuleRequired' );
     
     my %labels = (
-        PackageRequired => 'OTRS add on',
+        PackageRequired => 'OTOBO add on',
         ModuleRequired  => 'CPAN module',
     );
         

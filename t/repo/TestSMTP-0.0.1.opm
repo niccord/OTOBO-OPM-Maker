@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<otrs_package version="1.1">
+<otobo_package version="1.1">
     <Name>TestSMTP</Name>
     <Version>0.0.1</Version>
     <Vendor>Renee Baecker, Perl-Services.de</Vendor>
@@ -492,4 +492,4 @@ d3cuZ251Lm9yZy9saWNlbnNlcy9hZ3BsLnR4dD4uCgo9Y3V0Cgo9aGVhZDEgVkVSU0lPTgoKJFJl
 dmlzaW9uOiAxLjcwICQgJERhdGU6IDIwMTAvMDYvMTcgMjE6Mzk6NDAgJAoKPWN1dAo=
 </File>
     </Filelist>
-<BuildDate>2019-01-03 09:28:02</BuildDate><BuildHost>reneeb-ThinkPad-E560</BuildHost></otrs_package>
+<BuildDate>2019-01-03 09:28:02</BuildDate><BuildHost>reneeb-ThinkPad-E560</BuildHost></otobo_package>

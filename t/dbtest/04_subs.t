@@ -4,11 +4,11 @@ use strict;
 use warnings;
 
 use Test::More;
-use OTRS::OPM::Maker;
-use OTRS::OPM::Maker::Command::dbtest;
+use OTOBO::OPM::Maker;
+use OTOBO::OPM::Maker::Command::dbtest;
 
-my $dbtest = OTRS::OPM::Maker::Command::dbtest->new({
-    app => OTRS::OPM::Maker->new,
+my $dbtest = OTOBO::OPM::Maker::Command::dbtest->new({
+    app => OTOBO::OPM::Maker->new,
 });
 
 {

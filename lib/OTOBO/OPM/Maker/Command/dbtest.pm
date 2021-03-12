@@ -1,13 +1,13 @@
-package OTRS::OPM::Maker::Command::dbtest;
+package OTOBO::OPM::Maker::Command::dbtest;
 
 # ABSTRACT: Test db definitions in .sopm files
 
 use strict;
 use warnings;
 
-use OTRS::OPM::Maker -command;
+use OTOBO::OPM::Maker -command;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub abstract {
     return "Check if DatabaseInstall and DatabaseUninstall sections in the .sopm are correct";

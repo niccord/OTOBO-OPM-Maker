@@ -1,20 +1,20 @@
-[![Build Status](https://travis-ci.org/reneeb/OTRS-OPM-Maker.svg?branch=master)](https://travis-ci.org/reneeb/OTRS-OPM-Maker)
-[![Kwalitee status](http://cpants.cpanauthors.org/dist/OTRS-OPM-Maker.png)](http://cpants.charsbar.org/dist/overview/OTRS-OPM-Maker)
-[![GitHub issues](https://img.shields.io/github/issues/reneeb/OTRS-OPM-Maker.svg)](https://github.com/reneeb/OTRS-OPM-Maker/issues)
+[![Build Status](https://travis-ci.org/reneeb/OTOBO-OPM-Maker.svg?branch=master)](https://travis-ci.org/reneeb/OTOBO-OPM-Maker)
+[![Kwalitee status](http://cpants.cpanauthors.org/dist/OTOBO-OPM-Maker.png)](http://cpants.charsbar.org/dist/overview/OTOBO-OPM-Maker)
+[![GitHub issues](https://img.shields.io/github/issues/reneeb/OTOBO-OPM-Maker.svg)](https://github.com/reneeb/OTOBO-OPM-Maker/issues)
 
 # NAME
 
-OTRS::OPM::Maker - Module/App to build and test OTRS packages
+OTOBO::OPM::Maker - Module/App to build and test OTOBO packages
 
 # VERSION
 
-version 0.17
+version 0.18
 
 # DESCRIPTION
 
-If you do OTRS package development, you need to be able to check your package: Are all files of the package included in the file list in the sopm file? Is the sopm file valid? And you need to create the OPM file. There is otrs.PackageManager.pl included in OTRS installations, but sometimes you might not have an OTRS installation on the machine where you want to build the package (e.g. when you build the package in a [Jenkins](http://jenkins-ci.org) job).
+If you do OTOBO package development, you need to be able to check your package: Are all files of the package included in the file list in the sopm file? Is the sopm file valid? And you need to create the OPM file. There is otobo.PackageManager.pl included in OTOBO installations, but sometimes you might not have an OTOBO installation on the machine where you want to build the package (e.g. when you build the package in a [Jenkins](http://jenkins-ci.org) job).
 
-`OTRS::OPM::Maker` provides `opmbuild` that is a small tool for several tasks. At the moment it supports:
+`OTOBO::OPM::Maker` provides `opmbuild` that is a small tool for several tasks. At the moment it supports:
 
 - filetest
 
@@ -26,7 +26,7 @@ If you do OTRS package development, you need to be able to check your package: A
 
 - dependencies
 
-    List all CPAN- and OTRS- dependencies of your package
+    List all CPAN- and OTOBO- dependencies of your package
 
 - build
 
@@ -50,13 +50,13 @@ The distribution is contained in a Git repository, so simply clone the
 repository
 
 ```
-$ git clone http://github.com/reneeb/OTRS-OPM-Maker.git
+$ git clone http://github.com/niccord/OTOBO-OPM-Maker.git
 ```
 
 and change into the newly-created directory.
 
 ```
-$ cd OTRS-OPM-Maker
+$ cd OTOBO-OPM-Maker
 ```
 
 The project uses [`Dist::Zilla`](https://metacpan.org/pod/Dist::Zilla) to

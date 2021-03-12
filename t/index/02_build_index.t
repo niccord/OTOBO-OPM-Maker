@@ -11,13 +11,13 @@ use File::Spec;
 use File::Basename;
 use File::Temp qw(tempdir);
 
-use_ok 'OTRS::OPM::Maker::Command::index';
+use_ok 'OTOBO::OPM::Maker::Command::index';
 
 my $dir     = File::Spec->rel2abs( dirname __FILE__ );
 my $opm_dir = File::Spec->catdir( $dir, '..', 'repo' );
 
 my $index = q~<?xml version="1.0" encoding="utf-8" ?>
-<otrs_package_list version="1.0">
+<otobo_package_list version="1.0">
 <Package>
   <Name>SecondSMTP</Name>
   <Version>0.0.1</Version>
@@ -45,12 +45,12 @@ my $index = q~<?xml version="1.0" encoding="utf-8" ?>
   <File>/TestSMTP-0.0.1.opm</File>
 </Package>
 
-</otrs_package_list>
+</otobo_package_list>
 ~;
 
 {
     my $exec_output = capture_stdout {
-        OTRS::OPM::Maker::Command::index::execute( undef, {}, [ $opm_dir ] );
+        OTOBO::OPM::Maker::Command::index::execute( undef, {}, [ $opm_dir ] );
     };
 
     #diag $exec_output;

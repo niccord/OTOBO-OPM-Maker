@@ -4,11 +4,11 @@ use strict;
 use warnings;
 
 use Test::More;
-use OTRS::OPM::Maker;
-use OTRS::OPM::Maker::Command::index;
+use OTOBO::OPM::Maker;
+use OTOBO::OPM::Maker::Command::index;
 
-my $index = OTRS::OPM::Maker::Command::index->new({
-    app => OTRS::OPM::Maker->new,
+my $index = OTOBO::OPM::Maker::Command::index->new({
+    app => OTOBO::OPM::Maker->new,
 });
 
 {
