@@ -65,7 +65,7 @@ __DATA__
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
     
-    <xs:element name=otobo_package">
+    <xs:element name="otobo_package">
         <xs:complexType>
             <xs:choice maxOccurs="unbounded">
                 <xs:element ref="CVS" minOccurs="0" />
